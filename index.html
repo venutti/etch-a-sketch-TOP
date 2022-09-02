@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./main.js" defer></script>
+    <title>Pizarra mágica</title>
+</head>
+<body>
+    <div id="header">
+        <h1>Pizarra mágica</h1>
+    </div>
+    <div id="main">
+        <div id="menu">
+            <div class="option">
+                <label for="print-color">COLOR:</label>
+                <input type="color" id="print-color" name="print-color" value="#ff0000">
+            </div>
+            <div class="option">
+                <label for="size-select">TAMAÑO:</label>
+                <select name="size-select" id="size-select">
+                    <option value="16">16x16</option>
+                    <option value="32">32x32</option>
+                    <option value="64">64x64</option>
+                    <option value="128">128x128</option>
+                    <option value="256">256x256</option>
+                </select>
+            </div>
+            <div class="option">
+                <label for="clear">BORRAR:</label>
+                <input type="checkbox" id="clear" name="clear">
+            </div>
+        </div>
+        <div id="board"></div>
+    </div>
+</body>
+</html>
