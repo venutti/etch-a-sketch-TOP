@@ -61,17 +61,21 @@ h1 {
 
 /*BOARD*/
 #board {
-    background-color: var(--PRIMARY-COLOR);
-    border-radius: 1rem;
     border: 5px solid var(--SECONDARY-COLOR);
-    border-radius: 1rem;
     background-color: white;
-    width: 50vh;
-    height: 50vh;
+    width: 70vh;
+    height: 70vh;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#board .row {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
 }
 
 #board .celd {
-    
+    flex: 1;
+    border: 1px solid var(--SECONDARY-COLOR);
 }
